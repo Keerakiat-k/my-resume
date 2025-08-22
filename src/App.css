@@ -1,7 +1,26 @@
 /* src/App.css */
+.main-container {
+  display: flex; /* << เปิดใช้งาน Flexbox */
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--light-color); /* ใช้สีจากตัวแปร */
+  overflow: hidden; /* ป้องกันเงาหรือขอบทะลุออกมา */
+}
 
-/* --- Media Query for Tablets and Mobile Phones --- */
-@media (max-width: 768px) {
+.sidebar {
+  flex: 1; /* กำหนดสัดส่วนความกว้างเป็น 1 ส่วน */
+  background-color: var(--dark-color); /* ให้ Sidebar มีสีเข้ม */
+  color: var(--light-color); /* ตัวอักษรใน Sidebar เป็นสีอ่อน */
+  padding: 40px;
+}
+
+.main-content {
+  flex: 2.5; /* กำหนดสัดส่วนความกว้างเป็น 2.5 ส่วน (ใหญ่กว่า) */
+  padding: 40px;
+  }
+  @media (max-width: 768px) {
 
   /* 1. เปลี่ยนให้ layout จากแนวนอนเป็นแนวตั้ง */
   .main-container {
