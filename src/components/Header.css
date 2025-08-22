@@ -1,0 +1,28 @@
+/* src/components/Header.css */
+
+.header-container {
+  display: flex; /* << คำสั่งเปิดใช้งาน Flexbox */
+  justify-content: space-between; /* ดันให้ของ 2 ชิ้นอยู่ห่างกันสุดขอบ */
+  align-items: center; /* จัดให้ของทั้ง 2 ชิ้นอยู่กึ่งกลางแนวตั้ง */
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee; /* เพิ่มเส้นคั่นข้างล่าง */
+}
+
+.header-text h1 {
+  margin: 0;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+/* สไตล์ของรูปภาพ เราย้ายมาจาก Profile.css */
+.profile-picture {
+  width: 150px;
+  height: 200px;
+  border-radius: 5%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

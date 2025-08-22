@@ -1,0 +1,17 @@
+/* src/components/Profile.css */
+
+.profile-container {
+  display: flex; /* ใช้ Flexbox เพื่อจัดให้อยู่กึ่งกลาง */
+  justify-content: right; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  width: 150px; /* กำหนดความกว้าง */
+  height: 150px; /* กำหนดความสูง */
+  border-radius: 50%; /* << เทคนิคสำคัญ! ทำให้รูปเป็นวงกลม */
+  object-fit: cover; /* ทำให้รูปภาพเต็มกรอบวงกลมโดยไม่เสียสัดส่วน */
+  border: 5px solid #f0f2f5; /* เพิ่มเส้นขอบสีเดียวกับพื้นหลัง */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเล็กน้อย */
+}

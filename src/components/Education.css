@@ -1,0 +1,26 @@
+/* src/components/Education.css */
+
+.education-section {
+  margin-top: 20px;
+}
+
+.education-entry {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.education-entry h3 {
+    color: #000;
+  margin-top: 0;
+}
+.education-entry p {
+    color: #3b3b3b;
+  margin-top: 0;
+}
+.education-degree {
+  font-weight: bold;
+  color: #555;
+}

@@ -1,0 +1,19 @@
+/* src/index.css */
+
+/* กำหนดตัวแปรสีเพื่อใช้งานง่าย */
+:root {
+  --primary-color: #3b82f6;  /* สีน้ำเงินสำหรับเน้น */
+  --dark-color: #1e293b;     /* สีเทาเข้มเกือบดำสำหรับตัวอักษร */
+  --light-color: #f8fafc;    /* สีขาวนวลสำหรับพื้นหลัง */
+  --grey-color: #94a3b8;     /* สีเทาสำหรับตัวอักษรรอง */
+}
+
+body {
+  margin: 0;
+  /* เรียกใช้ฟอนต์ Sarabun ที่เรา import มา */
+  font-family: 'Sarabun', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e2e8f0; /* เปลี่ยนสีพื้นหลังทั้งหน้าเป็นสีเทาที่ดูสบายตาขึ้น */
+  color: var(--dark-color); /* กำหนดสีตัวอักษรหลัก */
+}

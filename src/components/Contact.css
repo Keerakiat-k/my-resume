@@ -1,0 +1,20 @@
+/* src/components/Contact.css */
+
+.contact-info {
+  background-color: #f9f9f9; /* สีพื้นหลังเทาอ่อน */
+  border: 1px solid #ddd;   /* เส้นขอบสีเทา */
+  border-radius: 8px;       /* ทำให้ขอบมน */
+  padding: 16px;            /* เพิ่มพื้นที่ว่างภายในกล่อง */
+  margin-top: 20px;         /* เพิ่มระยะห่างจากส่วนข้างบน */
+}
+
+.contact-info h2 {
+  border-bottom: 2px solid #525252; /* เพิ่มเส้นใต้หัวข้อ */
+  padding-bottom: 10px;          /* เพิ่มระยะห่างใต้เส้น */
+  color: #3b3b3b;
+}
+
+.contact-info p {
+  line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัดให้อ่านง่ายขึ้น */
+  color: #3b3b3b;
+}

@@ -1,0 +1,30 @@
+/* src/components/WorkExperience.css */
+
+.work-experience {
+  margin-top: 20px;
+}
+
+.job-entry {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px; /* ระยะห่างระหว่างแต่ละงาน */
+}
+
+.job-entry h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.job-entry h4 {
+  margin: 5px 0;
+  color: #555;
+}
+
+.job-duration  {
+  color: #777;
+  font-style: italic;
+  font-size: 0.9em;
+}
