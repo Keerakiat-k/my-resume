@@ -7,6 +7,7 @@ import Skills from './components/Skills.jsx';
 import './App.css'; // เราจะใช้ไฟล์นี้ตกแต่งหน้าเว็บโดยรวม
 
 function App() {
+  
   return (
    <div className="main-container">
      

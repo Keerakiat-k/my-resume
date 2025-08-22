@@ -7,27 +7,56 @@
   padding: 16px;
   margin-top: 20px;
 }
-.skills-section h2{
-    color: #000;
-}
+
 .skill-category {
   margin-bottom: 15px;
 }
 
-.skill-category h3 {
+.skill-category h3 , h2{
+  color: #000;
   border-bottom: 2px solid #eee;
   padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #000;
-}
-.skill-category li {
-    color:#3b3b3b;
-}
-.skills-section ul {
-  padding-left: 20px; /* เพิ่มระยะห่างให้หัวข้อย่อย */
+  margin-bottom: 15px; /* เพิ่มระยะห่างหลังหัวข้อ */
 }
 
 .skills-section p {
+  color:#3b3b3b;
   margin: 5px 0;
-  color: #3b3b3b;
+}
+
+/* --- โค้ดใหม่สำหรับ Skill Bars --- */
+
+.skill-item p {
+
+  margin-bottom: 8px; /* ระยะห่างระหว่างชื่อทักษะกับแท่งกราฟ */
+  font-weight: bold; /* ทำให้ชื่อทักษะเป็นตัวหนา */
+}
+
+.skill-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 15px; /* เพิ่มความสูงของแท่งกราฟเล็กน้อย */
+  width: 100%;
+}
+
+.skill-bar {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa); /* ไล่สีให้สวยงาม */
+  height: 100%;
+  border-radius: 10px;
+  animation: fillBar 1.5s ease-out forwards; /* เรียกใช้อนิเมชัน */
+}
+
+/* สร้าง Keyframes สำหรับอนิเมชัน */
+@keyframes fillBar {
+  from {
+    width: 0%;
+  }
+  to {
+    /* ความกว้างสุดท้ายจะถูกกำหนดโดย inline style ใน JSX */
+  }
+}
+
+/* (โค้ดเก่า) ลบ ul และ li ที่ไม่ใช้ออกได้ */
+.skills-section ul {
+  padding-left: 20px;
 }

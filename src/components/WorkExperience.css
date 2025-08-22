@@ -28,3 +28,14 @@
   font-style: italic;
   font-size: 0.9em;
 }
+.job-entry {
+  /* เพิ่ม transition เพื่อให้การเปลี่ยนแปลงนุ่มนวล */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-entry:hover {
+  /* เมื่อเมาส์ชี้ ให้ขยับขึ้นเล็กน้อย */
+  transform: translateY(-5px);
+  /* และเพิ่มเงาให้ชัดขึ้น */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
